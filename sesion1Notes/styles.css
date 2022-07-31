@@ -1,0 +1,46 @@
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+.show_id {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 160px;
+}
+
+.container {
+    border: 2px solid red;
+    width: 300px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.span_container {
+    margin: 10px;
+}
+
+.button_container_value {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 200px;
+    height: 160px;
+    margin: 5px;
+}
+
+.placeholder_example {
+    color: rgb(255, 0, 255);
+    font-style: italic;
+}
