@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <h1>Introduccion a CSS</h1>
+
+    <span>CSS es un lenguaje de reglas de estilos definido por los desarrolladres, que nos van ayudar a aplicar
+        "estilos" a
+        elementos particulares o a un grupo de elementos de una página web</span>
+
+    <h2>Anatomia de una regla CSS</h2>
+    <p>Este es un parrafo dónde le aplicamos estilos al elemento "p"</p>
+
+    <div>Selector: Ejemplo en el archivo css</div><br>
+    <div>Atributo: Los atributos en css nos ayudan a seleccionar elementos con atributos especificos</div><br>
+    <div>Por Ejemplo</div>
+    <div>Imaginemos que tenemos el siguiente formulario, dónde tenemos dos elementos input, uno con un atributo
+        "placeholder" y otro sin el</div><br>
+    <div>Haremos entonces una regla en CSS dónde aplicaremos estilos SOLO al input con el atributo placeholder </div>
+    <br>
+    <div>
+        <form action="">
+            <label for="">Correo</label>
+            <input type="text" placeholder="Email">
+            <label for="">Password</label>
+            <input type="text" name="" id="">
+        </form>
+    </div><br>
+
+    <span>Otro ejemplo del uso de atributos en relgas CSS sería aplicar estilos dónde el valor del atributo contenga una
+        palabra específica</span><br>
+    <span>Por ejemplo, el caso de la palabra flower en en el atributo</span>
+    <span>[attribute~="value"]</span><br>
+    <span title="flower">Flor</span>
+    <span title="sun flower">Girasol</span>
+    <span title="daisy flower">Margarita</span>
+    <span title="roses flowers">Ramo de Rosas</span>
+
+    <div>
+        <h2> Herencia </h2>
+        <p class="inheritance">Este párrafo tiene un <em>texto enfatizado</em> en su interior</p>
+        <span>Dónde la etiqueta em recibe el estilo por herencia del elemento padre, es decir, de la clase inheritance</span>
+    </div>
+    <div>
+        <h2> Cascada </h2>
+        <p>CSS hoja de estilo en cascada o CSS (siglas en inglés de cascading style sheets) esto quiere decir que nuestro CSS va seguir un "orden en cascada" como es el caso de esta etiqueta p que le aplicamos un nuevo color y un nuevo tamaño de fuente, por lo tanto todas las etiquetas p ahora reciben ese estilo</p>
+    </div>
+    <div class="specificity">
+        <h2> Especificidad </h2>
+        <span>La especificidad es la manera mediante la cual los navegadores deciden qué valores de una propiedad CSS son más relevantes</span>
+        <span>En esta clase ya hemos visto algunos selectores, pero en css se puede ser más especifico aún. Repasemos los selectores: </span>
+        <ul>
+            <li>Selectores de tipo | definido por el tipo de etiquet. Ejemplo un h5</li>
+            <h5>Este texto tiene estilos por un selector de tipo</h5>
+            <li>Selectores de clase</li>
+            <span class="classSelector">Este texto tiene estilos por un selector de clase</span>
+            <li>Selectores de ID</li>
+            <span id="idSelector">Este texto tiene estilos por un selector de ID</span>
+        </ul>
+        <span>Pero se puede ser aún más especifico, por ejemplo</span>
+        <p id="specificityId">En este texto vamos a hacer una aplicación de estilos más especifico para no alterar el estilo en las demás etiquetas p</p>
+    </div>
+    <div class="selectors">
+        <h2> Selectores </h2>
+        <div>
+            <h4>Universal (*)</h4>
+            <span>El selector universal CSS (*) coincide con elementos de cualquier tipo.</span>
+            <span>Por ejemplo:</span>
+            <div class="universal">Elemento 12</div>
+            <div class="universal">Elemento 49</div>
+            <div class="universal">Elemento 68</div>
+            <div class="universal">Elemento 547</div>
+            <div class="universal">Elemento 489</div>
+            <div class="universal">Elemento 654</div>
+
+        </div>
+        <div>
+            <h4>Element (div, h1, etc)</h4>
+            <span>El selector de elemento es aquel por el cual se selecciona a un elemento.</span>
+            <div>
+                Por ejemplo:
+                <a href="https://www.kodemia.mx">Soy un link!</a>
+            </div>
+        </div>
+        <div>
+            <h4>Clase (.)</h4>
+            <div class="box">
+                Soy una caja
+            </div>
+        </div>
+        <div>
+            <h4>id (#)</h4>
+            <div id="boxId">
+                Soy una caja
+            </div>
+        </div>
+        <div class="attributes">
+            <h2>Atributos más comunes</h2>
+            <div class="atr">
+                <span class="colorSpan">Hola Koders</span>
+                <span class="backgroundColorSpan">Hola Koders</span>
+                <div class="borderBox">
+                    Soy una caja
+                </div>
+            </div>
+            <div class="displayProperty">
+                <div class="displayNone">
+                    <div>
+                        Este es un texto <span class="displayText">aquí se ve aplicado el display</span> aleatorio
+                    </div>
+                </div>
+                <div class="displayInline">
+                    <div>
+                        Este es un texto <span class="displayText">aquí se ve aplicado el display</span> aleatorio
+                    </div>
+                </div>
+                <div class="displayBlock">
+                    <div>
+                        Este es un texto <span class="displayText">aquí se ve aplicado el display</span> aleatorio
+                    </div>
+                </div>
+                <div class="displayInlineBlock">
+                    <div>
+                        Este es un texto <span class="displayText">aquí se ve aplicado el display</span> aleatorio
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="measurementUnits">
+            <h2>Unidades de medida</h2>
+            <h4>Absolutas</h4>
+            <div class="absoluteUnits">
+                <div>Para hablar de las unidades de medida absolutas vamos a poner el mismo ejemplo de la caja y usarémos unidades absolutas</div>
+                <!-- Empieza BEM -->
+                <div class="box-with-absolute-units">
+                    <div class="box-with-absolute-units__pixels">
+                        Soy una caja de pixeles
+                    </div>
+                    <div class="box-with-absolute-units__points">
+                        Soy una caja hecha con puntos
+                    </div>
+                </div>
+            </div>
+            <h4>Relativas</h4>
+            <div class="relativeUnits">
+                <div class="box-with-relative-units">
+                    <div class="box-with-relative-units__rem">
+                        Soy una caja de rem
+                    </div>
+                    <div class="box-with-relative-units__em">
+                        Soy una caja de em
+                    </div>
+                    <div class="box-with-relative-units__percentage">
+                        Soy una caja de porcentajes
+                    </div>
+                    <div class="box-with-relative-units__viewport-width">
+                        Soy una caja de vp-w
+                    </div>
+                    <div class="box-with-relative-units__viewport-height">
+                        Soy una caja de vp-h
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-model">
+            <div class="box-model__box--border-violet">
+                soy un contenido
+            </div>
+            <div class="box-model__box--border-green">
+                soy un contenido
+            </div>
+            <div class="box-model__box--border-box">
+                soy un contenido
+            </div>
+            <div class="box-model__box--content-box">
+                soy un contenido
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
