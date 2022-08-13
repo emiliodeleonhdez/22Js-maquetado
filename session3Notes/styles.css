@@ -1,0 +1,103 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+li{
+    color: green
+}
+
+/* Agrupando elementos con selectores agrupados */
+
+
+li, p, h4, ul{
+    color: green
+}
+
+/* elemento especifico y clase especifica ( elemento.clase ) */
+
+.p-specific-element__specificity-selectors--blue{
+    color: blue;
+}
+
+.p-specific-element__specificity-selectors--red{
+    color: red;
+}
+
+.p-specific-element__specificity-selectors--violet{
+    color: violet;
+}
+
+.p-specific-element__specificity-selectors--hot-pink{
+    color: hotpink;
+}
+
+/* elemento dentro de otro elemento ( elemento otroElemento ) */
+
+div form{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: auto;
+    color: orange;
+    font-size: 24px;
+}
+
+/* selector hijo ( > ) */
+
+/* Aquí la idea es que se apliquen estilos a todos las etiquetas p "hijos" que tengan como padre una etiqueta div */
+/* Está comentada a proposito para que no afecte los demás estilos
+Para que el siguiente ejemplo sea la combinación de un selector hijo combinado con una clase */
+
+/* div > p {
+    background-color: blueviolet;
+    color: yellow;
+} */
+
+div > p.p-children-selector__specificity-selectors--blueviolet {
+    background-color: blueviolet;
+    color: yellow;
+}
+
+li:first-of-type + li {
+    color:red
+}
+
+/* Aquí estamos combinando varios selectores, el primero es el selector por clase
+La clase en BEM .adjacent-selector__specificity-selectors
+seguido del selector hijo representado por el > que va accesar al primer span
+por último el selector adyacente, que nos permite entrar al span a un lado del primer span, esto porque es un hermano adjacente */
+
+.adjacent-selector__specificity-selectors > span + span{
+    color:brown;
+    background-color: yellow;
+}
+
+/* Aquí estamos usando el selector hermano con el simbolo ~ junto con el selector de clase
+Entonces, va aplicar estilos al primer hermano con la etiqueta div de la clase .span-sibiling-selector__specificity-selectors */
+
+.span-sibiling-selector__specificity-selectors ~ div{
+    background-color: cadetblue;
+    color: blueviolet;
+    width: 90px;
+    height: 90px;
+}
+
+.attr-selector__specificity-selectors{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 250px;
+}
+
+a[href="https://kodemia.mx"]{
+    color: blueviolet;
+    font-weight: bold;
+    font: 18px;
+    text-decoration: none;
+}
+
+input[placeholder="Nombre"]{
+    font-style: italic;
+    font-weight: bolder;
+    color: green;
+}

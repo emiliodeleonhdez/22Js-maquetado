@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="session-3">
+        <h1>Sesión 3</h1>
+        <div class="session-3__grouping-selectors">
+            <h2>Agrupar elementos</h2>
+            <span>Así como lo vimos la clase sesión anterior, 
+                para aplicar estilos a un elemento en CSS se puede hacer 
+                especificando la etiqueta y dentro de llaves {} los estilos que sean necesarios
+            </span>
+            <span>Por ejemplo, la siguiente lista dónde aplicaremos estilos</span>
+            <ol class="ol__grouping-selectors">
+                <li class="ol__grouping-selectors--green">Koder 1</li>
+                <li class="ol__grouping-selectors--green">Koder 2</li>
+                <li class="ol__grouping-selectors--green">Koder 3</li>
+                <li class="ol__grouping-selectors--green">Koder 4</li>
+            </ol>
+            <span>
+                Ahora, que pasa sí queremos agregar ese mismo estilo a diferentes elementos. Para eso tenemos la agrpación de selectores.
+                Lo único que tenemos que hacer es agruparlos con una coma. 
+            </span>
+            <p>Elemento agrupado</p>
+            <h4>Otro elemento agrupado</h4>
+            <ul class="ul__grouping-selectors">
+                <li class="ul__grouping-selectors--green">Koder 1</li>
+                <li class="ul__grouping-selectors--green">Koder 2</li>
+                <li class="ul__grouping-selectors--green">Koder 3</li>
+                <li class="ul__grouping-selectors--green">Koder 4</li>
+            </ul>
+        </div>
+        <div class="session-3__specificity-selectors">
+            <div class="specific-element__specificity-selectors">
+                <h2>Elementos específicos</h2>
+                <p class="p-specific-element__specificity-selectors--blue">
+                    p con estilo específico
+                </p>
+                <p class="p-specific-element__specificity-selectors--red">
+                    p con estilo específico
+                </p>
+                <p class="p-specific-element__specificity-selectors--violet">
+                    p con estilo específico
+                </p>
+                <p class="p-specific-element__specificity-selectors--hot-pink">
+                    p con estilo específico
+                </p>                
+            </div>
+            <div class="element-inside-element__specificity-selectors">
+                <h2>Elemento dentro de otro elemento</h2>
+                <span>
+                    Ahora vamos a suponer que tenemos un div dónde dentro de este div tenemos un formulario
+                </span>
+                <div class="div-element-inside-element__specificity-selectors--orange-big-font">
+                    <form action="" class="for-element-inside-element__specificity-selectors">
+                        <label for="" class="lable-element-inside-element__specificity-selectors">Correo Electrónico</label>
+                        <input type="email" class="input-element-inside-element__specificity-selectors">
+                        <label for="" class="lable-element-inside-element__specificity-selectors">Constraseña</label>
+                        <input type="password" class="input-element-inside-element__specificity-selectors">
+                    </form>
+                </div>
+            </div>
+            <div class="children-selector__specificity-selectors">
+                <h2>Selector hijo ></h2>
+                <span>Aquí ahora vamos a el selector hijo </span>
+                <div> 
+                    <p class="p-children-selector__specificity-selectors--blueviolet">Elemento p hijo del div</p>
+                    <span>Span hijo dentro del div padre</span>
+                    <div>div hijo dentro del div padre</div>
+                </div>
+            </div>
+            <div class="adjacent-selector__specificity-selectors">
+                <ul class="ul-adjacent-selector__specificity-selectors">
+                    <li>Koder 1</li>
+                    <li>Koder 2</li>
+                    <li>Koder 3</li>
+                </ul>
+
+                <span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam laborum aliquam sint quo est? Voluptate, consequatur! Sequi nisi ipsa suscipit quod provident officia ipsum exercitationem. Recusandae fugit adipisci modi impedit.
+                    Magnam in optio beatae praesentium, eveniet, dolore fuga ea deserunt blanditiis officia aliquid. Illo, dicta quaerat quis nostrum animi, soluta itaque deleniti dignissimos omnis quisquam repellat, laudantium sit voluptas. Deleniti.
+                    Provident, in dolorem! Aliquam veniam nesciunt fugit quis accusamus molestias provident ipsum officia perferendis sed possimus, veritatis inventore repudiandae libero in consequuntur cupiditate incidunt vel! Sit et obcaecati corrupti culpa?
+                </span>
+                <span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ducimus alias nesciunt distinctio. Eos animi distinctio facere veritatis rerum quasi quis error suscipit debitis necessitatibus? Laboriosam inventore perspiciatis esse ex.
+                    Adipisci nisi culpa quo deleniti nobis provident nam! Cupiditate praesentium architecto, exercitationem, laboriosam consequatur suscipit maxime aut autem numquam reprehenderit asperiores ipsum eius deleniti rerum illo et voluptates corporis obcaecati?
+                </span>
+            </div>
+            <div class="sibiling-selector__specificity-selectors">
+                <span class="span-sibiling-selector__specificity-selectors">
+                    Aquí hay un span
+                </span>
+                <p>
+                    Aquí hay un parrafo
+                </p>
+                <div>
+                    Aquí hay un div
+                </div>
+            </div>
+            <div class="attr-selector__specificity-selectors">
+                <a href="https://kodemia.mx">Transformando tú vida</a>
+                <input type="text" placeholder="Nombre">
+            </div>
+        </div>
+        <div class="session-3__pseudo-classes">
+            Empieza la explicación del reto
+        </div>
+        <div class="session-3__pseudo-elements"></div>
+    </div>
+</body>
+</html>
