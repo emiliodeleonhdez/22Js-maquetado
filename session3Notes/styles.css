@@ -101,3 +101,93 @@ input[placeholder="Nombre"]{
     font-weight: bolder;
     color: green;
 }
+
+.button__pseudo-classes--active {
+    background-color: blue;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 180px;
+    cursor: pointer;
+}
+
+.button__pseudo-classes--active:active {
+    color: purple;
+    font-weight: bold;
+    border: 1px solid purple;
+    background-color: white;
+}
+
+.list__pseudo-classes--green-child li:first-child{
+    background-color: yellow;
+    color: green;
+}
+
+.list__pseudo-classes--green-child li:last-child{
+    background-color: rgb(255, 0, 85);
+    color: rgb(0, 0, 0);
+}
+.button__pseudo-classes--hover{
+    background-color: blue;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 180px;
+    cursor: pointer;
+}
+
+.button__pseudo-classes--hover:hover{
+    background-color: purple;
+    box-shadow: 2px 2px gray;
+}
+
+.div__not:not(p) {
+    background-color: black;
+    color: greenyellow;
+}
+
+.button__pseudo-classes--visited{
+    background-color: blue;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 180px;
+    cursor: pointer;
+}
+
+.a__visited--green{
+    color: green;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.a__visited--green:visited{
+    font-weight: normal;
+    color: orange;
+}
+
+.div__last-child p:last-child{
+    background-color: black;
+    color: rgb(255, 255, 0);
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.div__before q::before {
+    content: "«";
+    color: blue;
+}
+
+.div__before q::after {
+    content: "»";
+    color: yellowgreen;
+}
+
+.div__first-letter p::first-letter{
+    color: red;
+    font-size: large;
+    font-weight: bold;
+}

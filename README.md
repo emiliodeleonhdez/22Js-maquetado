@@ -13,7 +13,7 @@
 
 - Sesión 2 - Introducción a CSS - 🔥
 
-- Sesión 3 - Selectores avanzados - 🕑
+- Sesión 3 - Selectores avanzados - 🔥
 
 - Sesión 4 - Posicionamiento, animaciones y transiciones - 😅
 
