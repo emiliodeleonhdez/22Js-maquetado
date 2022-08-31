@@ -1,0 +1,56 @@
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: aqua;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        background-color: turquoise;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: greenyellow;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        background-color: hotpink;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        background-color: blue;
+    }
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.div__main {
+    background-image: url(https://images4.alphacoders.com/183/thumb-1920-183974.jpg);
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.h1__title {
+    color: white;
+}
+
+.div__title-container {
+    position: relative;
+    top: 50vh;
+    left: 50vh;
+}

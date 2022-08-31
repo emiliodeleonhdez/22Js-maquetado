@@ -142,7 +142,7 @@ A sticky element toggles between relative and fixed, depending on the scroll pos
     margin-left: 20px;
 }
 
-.button-subscribe__transition--4s{
+/* .button-subscribe__transition--4s{
     margin-left: 10px;
     border: none;
     width: 180px;
@@ -159,5 +159,53 @@ A sticky element toggles between relative and fixed, depending on the scroll pos
 
 
 .button-subscribe__transition--4s:hover {
+    width: 240px;
+} */
+
+.div__transition-timing-function > .button {
+    margin: 30px;
+    border:none;
+    width: 180px;
+    border-radius: 15px 0 15px 0;
+    height: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+.button__linear--blue {
+    background-color: blue;
+    transition-timing-function: linear;
+}
+
+.button__linear--blue:hover {
+    width: 240px;
+}
+
+.button__ease-in-green {
+    transition-timing-function: ease-in;
+    background-color: green;
+}
+
+.button__ease-in-green:hover {
+    width: 150px;
+}
+
+.button__ease--hot-pink {
+    transition-timing-function: ease;
+    /* transition: 1s; */
+    background-color: hotpink;
+}
+
+.button__ease--hot-pink:hover {
+    width: 240px;
+}
+
+.button__ease-out--green-yellow {
+    background-color: greenyellow;
+    transition-timing-function: ease-out;
+    /* transition: 2s; */
+}
+
+.button__ease-out--green-yellow:hover {
     width: 240px;
 }
